@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+.staff {
+  min-height: 195vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#staff-hero {
+  padding: 32.5vh 0px 32.5vh 0px;
+}
+.hero-text {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+
+.staff-image {
+  background-image: url(../media/dorp2.png);
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sec1 {
+  min-height: 95vh;
+  background-color: rgb(24, 24, 24);
+}
