@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./assets/build/main.css">
     <link rel="stylesheet" href="./assets/build/style.css">
 </head>
-<body class="home">
+<body id="home">
+    <div class="bluring">
     <nav>
         <div class="logo">
             <embed src="./assets/media/logo.svg">
@@ -37,10 +38,26 @@
     </nav>
 
 <header>
+    <div id="video" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <video width="100%" height="100%" controls>
+                <source src="video.mp4">
+                Your video doesn't support the video :(
+            </video>
+    </div>
+    </div>
+    
     <div id="hero" class="parallax-image">
         <h1 class="hero-text">Play.KingCraftMC.nl</h1>
         <h5 class="hero-sub-text">Je favoriete kingdom server!</h5>
+
+        <div id="trailer">
+            <h1 class="trailer-hero">Bekijk onze trailer!</h1>
+            <button id="vidbtn" onclick="showVideo()">Click Me!</button>
+        </div>
     </div>
+
 </header>
 
 <section class="rules">
@@ -58,7 +75,11 @@
             <li class="list-inline-item"><a href="vote.html">Vote</a></li>
         </ul>
         <p class="copyright">KingCraftMC © 2021</p>
+        <div class="madeby">
+        Made with <span id="icon-love">❤</span> by <a href="https://jeltevdv.nl" target="_blank">Jelte</a>
+    </div>
     </footer>
+</div>
 </div>
 <button onclick="goLight()" id="lightBtn" title="Enable light mode"><i class="far fa-lightbulb"></i></button>
 <button onclick="topFunction()" id="topButton" title="Scroll to top"><i class="fas fa-arrow-up"></i></button>
