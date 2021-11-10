@@ -83,10 +83,11 @@ nav embed {
   }
   .burger {
     display: block;
+    margin-right: 10px;
   }
 }
 
-@media screen and (max-width: 1248px) {
+@media screen and (max-width: 1024px) {
   .nav-links {
     width: 80%;
   }
@@ -139,7 +140,7 @@ nav embed {
 }
 
 .footer-basic {
-  padding: 40px 0;
+  padding: 40px 0 15px 0;
   background-color: rgb(41, 39, 39);
   color: white;
   min-height: 20vh;
@@ -174,7 +175,17 @@ nav embed {
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
   color: #aaa;
   margin-bottom: 0;
+}
+.footer-basic .madeby {
+  text-align: center;
+  color: #aaa;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.footer-basic #icon-love {
+  color: #e74c3c !important;
+  font-size: inherit !important;
 }
