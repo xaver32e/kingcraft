@@ -32,7 +32,62 @@
   background-repeat: no-repeat;
 }
 
-.sec1 {
+.grid {
   min-height: 95vh;
   background-color: rgb(24, 24, 24);
+  display: grid;
+  grid-template-columns: 3;
+}
+
+/* COLLAPS BUTTON */
+.collapsible {
+  background-color: rgb(36, 36, 36);
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  width: 20%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 20px 20px 10px 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-collapse,
+.collapsible:hover {
+  transition: all 0.3s;
+  border-radius: 20px 20px 0px 0px;
+  background-color: rgb(54, 54, 54);
+}
+
+.content {
+  padding: 0 18px;
+  width: 20%;
+  overflow: hidden;
+  color: white;
+  max-height: 0;
+  border-radius: 0px 0px 20px 20px;
+  background-color: rgb(43, 43, 43);
+  transition: max-height 0.2s ease-out;
+}
+.txt {
+  margin-top: 5px;
+}
+
+.algemeen {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  margin-left: 30px;
+}
+
+.regel-lijst {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
 }

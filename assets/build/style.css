@@ -30,11 +30,15 @@ body {
   font-weight: 900;
   letter-spacing: 1vw;
   text-align: center;
+  margin: 0 auto;
+  width: min-content;
 }
+
 .hero-sub-text {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 900;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -84,13 +88,20 @@ body {
 }
 #vidbtn {
   border: none;
-  background-color: rgb(199, 91, 91);
+  /* background-color: rgb(199, 91, 91); */
+  background: linear-gradient(140deg, rgb(219, 78, 78), rgb(214, 135, 61));
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 20px;
+  color: black;
   border-radius: 8px;
+  transition: all 0.3s;
   font-size: 16px;
   margin-top: 5px;
+}
+#vidbtn:hover {
+  font-size: 18px;
+  transition: all 0.3s;
 }
 
 .modal {
@@ -168,14 +179,6 @@ body {
   }
 }
 
-@keyframes in-right {
-  from {
-    right: -40px;
-  }
-  to {
-    right: 30px;
-  }
-}
 @keyframes fade-out {
   from {
     opacity: 1;

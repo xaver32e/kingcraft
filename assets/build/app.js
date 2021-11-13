@@ -3,11 +3,9 @@ const navSlide = () => {
     const nav = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links li")
     
-    // Toggle Nav
     burger.addEventListener('click', ()=>{
         nav.classList.toggle('nav-active')
 
-    // Animate Links
     navLinks.forEach((link, index) => {
         if(link.style.animation){
             link.style.animation = ''
@@ -15,12 +13,10 @@ const navSlide = () => {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
         }
     });
-    // Burger Animation
     burger.classList.toggle('toggle')
   });
 
 }
-
 
 const btn = document.getElementById("topButton")
 window.onscroll = function() {scrollFunction()};
@@ -28,10 +24,11 @@ function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         btn.style.display = "block";
         btn.style.animation = "in-right 0.7s ease"
-    } else {
-            btn.style.display = "none"
-
+    } 
+    else{
+      btn.style.display = "none"
     }
+    
   }
 
   function topFunction() {
@@ -46,6 +43,55 @@ function scrollFunction() {
     hero.style.transitionDuration = "0.5s"
   }
 
+window.onload = function(){
+  console.log("%cWebsite gemaakt door Jelte \nNooit persoonlijke informatie in console zetten.", 'background: #fff; color: #000')
+  console.log("https://jeltevdv.nl")
+  
+}
+
+// SERVER STATUS
+
+let status = false
+var display = document.getElementById("serverstatus")
+
+  let url = "https://mcapi.us/server/status?ip=play.kingcraft.nl"
+  let request = new XMLHttpRequest()
+  request.open("GET", url)
+  request.responseType = 'json';
+  request.send()
+
+  request.onload = function() {
+    console.log(request.response.online)
+    if(request.response.online == true){
+      display.innerHTML = "online!"
+      display.style.color = "#48C158"
+    }
+    else{
+      display.innerHTML = "offline :("
+      display.style.color = "#F35858"
+    }
+  }
+
+
+
+//function discord () {
+//	return {
+//		count: 0,
+//		copied: false,
+//		ping () {
+//			axios.get('https://discord.com/api/guilds/842969624299700255/widget.json')
+//				.then(res => {
+//					this.count = res.presence_count
+//				})
+//		}
+//	}
+//}
+
+// NOT INTERGRATED
+//  function copyText(){
+//  navigator.clipboard.writeText("play.kingcraft.nl")
+//    alert("Copied")
+//  }
 
 
 navSlide()

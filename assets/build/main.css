@@ -1,3 +1,9 @@
+::selection {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(19, 19, 19);
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
 /* NAV */
 nav {
   display: flex;
@@ -59,6 +65,7 @@ nav embed {
   background-color: rgb(233, 233, 233);
   margin: 5px;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -75,6 +82,7 @@ nav embed {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    border-radius: 0 0 0 10px;
     transform: translateX(100%);
     transition: transform 0.4s ease-in;
   }
@@ -140,7 +148,7 @@ nav embed {
 }
 
 .footer-basic {
-  padding: 40px 0 15px 0;
+  padding: 20px 0 15px 0;
   background-color: rgb(41, 39, 39);
   color: white;
   min-height: 20vh;
@@ -153,6 +161,18 @@ nav embed {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+.footer-basic h4 {
+  color: #c2c2c2;
+}
+.status {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.status h4,
+.status span {
+  font-size: 20px;
 }
 
 .footer-basic li {
@@ -188,4 +208,22 @@ nav embed {
 .footer-basic #icon-love {
   color: #e74c3c !important;
   font-size: inherit !important;
+}
+
+@keyframes in-right {
+  from {
+    right: -40px;
+  }
+  to {
+    right: 30px;
+  }
+}
+
+@keyframes out-right {
+  from {
+    right: 30px;
+  }
+  to {
+    right: -40px;
+  }
 }
