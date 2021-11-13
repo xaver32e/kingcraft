@@ -42,15 +42,31 @@
 </header>
 
 <section>
-    <div class="sec1">
+    <div class="grid">
 
-
+        <div class="regel-lijst">
+        <div class="algemeen">
+            <button type="button" class="collapsible first">Bekijk algemene regels</button>
+            <div class="content">
+                <div class="txt">
+                    <li>Regel 1</li>
+                    <li>Regel 2</li>
+                    <li>Regel 3</li>
+                    <li>Regel 4</li>
+                    <li>Regel 5</li>
+                </div>
+            </div>
+        </div>
+    </div>
         
     </div>
 </section>
 
 <div class="footer-basic">
     <footer>
+        <div class="status">
+            <h4>De server is momenteel <span id="serverstatus">online!</span></h4>
+        </div>
         <ul class="list-inline">
             <li class="list-inline-item"><a href="index.html">Home</a></li>
             <li class="list-inline-item"><a href="#">Regels</a></li>
@@ -59,6 +75,7 @@
             <li class="list-inline-item"><a href="https://map.kingcraftmc.nl/" target="_blank">Dynmap</a></li>
             <li class="list-inline-item"><a href="vote.html">Vote</a></li>
         </ul>
+
         <p class="copyright">KingCraftMC © 2021</p>
         <div class="madeby">
             Made with <span id="icon-love">❤</span> by <a href="https://jeltevdv.nl" target="_blank">Jelte</a>
@@ -67,5 +84,6 @@
 </div>
 <button onclick="topFunction()" id="topButton" title="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 <script src="./assets/build/app.js"></script>
+<script src="./assets/build/collapse.js"></script>
 </body>
 </html>
