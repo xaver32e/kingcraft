@@ -6,11 +6,16 @@
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .staff {
   min-height: 195vh;
   max-width: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
 }
 #staff-hero {
   padding: 32.5vh 0px 32.5vh 0px;

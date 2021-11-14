@@ -6,10 +6,15 @@
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .regels {
   min-height: 195vh;
+  position: relative;
   max-width: 100%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 #regels-hero {

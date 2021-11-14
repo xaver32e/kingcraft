@@ -5,11 +5,15 @@
   box-sizing: border-box;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 .vote {
   min-height: 195vh;
   max-width: 100%;
-  overflow-x: hidden;
+  position: relative;
   scroll-behavior: smooth;
 }
 #vote-hero {
