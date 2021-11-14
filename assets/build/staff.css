@@ -57,10 +57,11 @@ body {
 
 .card {
   background: transparent;
+  border: none;
   display: flex;
   align-items: center;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 30px;
   flex-direction: row;
 }
 .card img {
@@ -76,9 +77,9 @@ body {
 }
 
 .section {
-  text-align: center;
+  text-align: left;
   font-weight: 900;
-  margin: 20px 0px 10px 0px;
+  margin: 20px 0px 0px 50px;
   font-size: 30px;
 }
 
@@ -88,12 +89,16 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .section {
+    margin: 20px 0px 0px 0px;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .staff-row {
     grid-template-columns: auto;
     margin-left: auto;
+    margin: 20px 0px 0px 0px;
     margin-right: auto;
   }
 }
