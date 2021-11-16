@@ -153,7 +153,6 @@ nav embed {
   color: white;
   min-height: 20vh;
   display: grid;
-  grid-template-columns: 7.5% 85% 7.5%;
   text-align: center;
   grid-template-rows: auto;
 }
