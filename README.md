@@ -5,7 +5,7 @@
 - Add trailer
 - Fix pause on exit video
 - Animations
-- Add blog section
+- Add blog section [Maybe?]
 - Loading screen
 ----------------------------------------
 
