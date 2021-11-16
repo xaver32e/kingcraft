@@ -152,9 +152,30 @@ nav embed {
   background-color: rgb(41, 39, 39);
   color: white;
   min-height: 20vh;
+  display: grid;
+  grid-template-columns: 7.5% 85% 7.5%;
+  text-align: center;
+  grid-template-rows: auto;
+}
+
+.discord {
+  display: flex;
+  align-items: center;
+}
+
+.discord-logo {
+  font-size: 20px;
+  color: rgb(138, 118, 250);
+}
+.discord a {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .footer-basic ul {
+  grid-column-start: 2;
+  grid-column-end: 2;
   padding: 0;
   list-style: none;
   text-align: center;
@@ -169,6 +190,8 @@ nav embed {
 .status {
   text-align: center;
   margin-bottom: 20px;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 .status h4,
 .status span {
@@ -193,6 +216,8 @@ nav embed {
 }
 
 .footer-basic .copyright {
+  grid-column-start: 2;
+  grid-column-end: 2;
   margin-top: 15px;
   text-align: center;
   font-size: 15px;
@@ -200,14 +225,30 @@ nav embed {
   margin-bottom: 0;
 }
 .footer-basic .madeby {
+  grid-column-start: 2;
+  grid-column-end: 2;
   text-align: center;
   color: #aaa;
   font-size: 16px;
   margin-top: 15px;
 }
 .footer-basic #icon-love {
-  color: #e74c3c !important;
+  color: #d8685b !important;
   font-size: inherit !important;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(79, 109, 209);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(24, 24, 24);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(55, 78, 155);
 }
 
 @keyframes in-right {
