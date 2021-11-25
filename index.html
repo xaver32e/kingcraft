@@ -41,7 +41,7 @@
     <div id="video" class="modal">
         <div class="modal-content">
         <span class="close">&times;</span>
-            <video width="100%" height="100%" controls>
+            <video width="100%" height="100%" id="video" controls>
                 <source src="video.mp4">
                 Your video doesn't support the video :(
             </video>
@@ -56,18 +56,16 @@
 
         <div id="trailer">
             <h1 class="trailer-hero">Bekijk onze trailer!</h1>
-            <button id="vidbtn" onclick="showVideo()">Click Me!</button>
+            <button id="vidbtn" onclick="copyText()">Kopieer het IP!</button>
+            <div class="copied" id="copied" style="font-weight: 500; font-size: 22px; text-transform: uppercase;"></div>
         </div>
     </div>
 
 </header>
 
-<section class="rules">
-
-</section>
 
 <div class="footer-basic">
-    <footer>
+
         <div class="status">
             <h4>De server is momenteel <span id="serverstatus">online!</span></h4>
         </div>
@@ -79,17 +77,21 @@
             <li class="list-inline-item"><a href="https://map.kingcraftmc.nl/" target="_blank">Dynmap</a></li>
             <li class="list-inline-item"><a href="vote.html">Vote</a></li>
         </ul>
+        <div class="contact">
+            <i class="far fa-envelope mail-icon"></i>
+            <a href="contact.html">Neem contact op</a>
+        </div>
         <p class="copyright">KingCraftMC © 2021</p>
         <div class="madeby">
         Made with <span id="icon-love">❤</span> by <a href="https://jeltevdv.nl" target="_blank">Jelte</a>
     </div>
-    </footer>
 </div>
 </div>
 <button onclick="goLight()" id="lightBtn" title="Enable light mode"><i class="far fa-lightbulb"></i></button>
 <button onclick="topFunction()" id="topButton" title="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 <script src="./assets/build/app.js"></script>
 <script src="./assets/build/modal.js"></script>
+
 
 </body>
 </html>
