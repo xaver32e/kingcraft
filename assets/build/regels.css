@@ -12,7 +12,7 @@ body {
 }
 
 .regels {
-  min-height: 195vh;
+  min-height: 210vh;
   position: relative;
   max-width: 100%;
   scroll-behavior: smooth;
@@ -38,7 +38,7 @@ body {
 }
 
 .grid {
-  min-height: 95vh;
+  min-height: 110vh;
   background-color: rgb(24, 24, 24);
   display: grid;
   grid-template-columns: auto;

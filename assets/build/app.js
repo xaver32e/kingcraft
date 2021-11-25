@@ -54,14 +54,13 @@ window.onload = function(){
 let status = false
 var display = document.getElementById("serverstatus")
 
-  let url = "https://mcapi.us/server/status?ip=play.kingcraft.nl"
+  let url = "https://mcapi.us/server/status?ip=play.kingcraftmc.nl"
   let request = new XMLHttpRequest()
   request.open("GET", url)
   request.responseType = 'json';
   request.send()
 
   request.onload = function() {
-    console.log(request.response.online)
     if(request.response.online == true){
       display.innerHTML = "online!"
       display.style.color = "#48C158"
@@ -74,24 +73,14 @@ var display = document.getElementById("serverstatus")
 
 
 
-//function discord () {
-//	return {
-//		count: 0,
-//		copied: false,
-//		ping () {
-//			axios.get('https://discord.com/api/guilds/842969624299700255/widget.json')
-//				.then(res => {
-//					this.count = res.presence_count
-//				})
-//		}
-//	}
-//}
-
-// NOT INTERGRATED
-//  function copyText(){
-//  navigator.clipboard.writeText("play.kingcraft.nl")
-//    alert("Copied")
-//  }
+function copyText(){
+  navigator.clipboard.writeText("play.kingcraftmc.nl")
+  var copiedText = document.getElementById("copied")
+  copiedText.innerHTML = "IP Gekopieerd!"
+  setTimeout(() => {
+    copiedText.innerHTML = ""
+  }, 7000);
+  }
 
 
 navSlide()

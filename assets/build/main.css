@@ -40,7 +40,7 @@ nav embed {
   text-align: center;
   color: whitesmoke;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-weight: 500;
   font-size: 16px;
   border-radius: 10px;
@@ -92,6 +92,9 @@ nav embed {
   .burger {
     display: block;
     margin-right: 10px;
+  }
+  .footer-basic {
+    display: block;
   }
 }
 
@@ -153,6 +156,7 @@ nav embed {
   color: white;
   min-height: 20vh;
   display: grid;
+  grid-template-columns: 15% 70% 15%;
   text-align: center;
   grid-template-rows: auto;
 }
@@ -160,16 +164,52 @@ nav embed {
 .discord {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  margin-left: 20px;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
 }
 
 .discord-logo {
+  margin-right: 5px;
   font-size: 20px;
   color: rgb(138, 118, 250);
 }
 .discord a {
+  margin-left: 5px;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 15px;
+  color: #c2c2c2;
   text-decoration: none;
+}
+
+.contact {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact a {
+  text-decoration: none;
+  color: #c2c2c2;
+  font-size: 18px;
+  transition-duration: 0.2s;
+  padding: 10px;
+}
+.mail-icon {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-top: 3px;
+}
+.contact a:hover {
+  color: #dddddd;
+  text-decoration: underline;
+  transition-duration: 0.2s;
 }
 
 .footer-basic ul {
@@ -217,7 +257,6 @@ nav embed {
 .footer-basic .copyright {
   grid-column-start: 2;
   grid-column-end: 2;
-  margin-top: 15px;
   text-align: center;
   font-size: 15px;
   color: #aaa;

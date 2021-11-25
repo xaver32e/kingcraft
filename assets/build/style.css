@@ -28,7 +28,7 @@ body {
 .hero-text {
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 1vw;
+  letter-spacing: 0.5vh;
   text-align: center;
   margin: 0 auto;
   width: min-content;
@@ -100,8 +100,9 @@ body {
   margin-top: 5px;
 }
 #vidbtn:hover {
-  font-size: 18px;
+  font-size: 17px;
   transition: all 0.3s;
+  color: white;
 }
 
 .modal {

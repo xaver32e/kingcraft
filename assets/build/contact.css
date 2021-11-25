@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.contact-page {
+  position: relative;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+#contact-hero {
+  padding: 32.5vh 0px 32.5vh 0px;
+}
+.hero-text {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+
+.contact-image {
+  background-image: url(../media/dorp1.png);
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid {
+  background-color: rgb(24, 24, 24);
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: 16% 30% 8% 30% 16%;
+  grid-template-rows: 10% 70% 10% 10%;
+}
+.contact-form {
+  width: 100%;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  color: white;
+  font-weight: 400;
+  height: 100%;
+  background-color: rgb(19, 19, 19);
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.frame {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.frame iframe {
+  width: 100%;
+  height: 95%;
+}
+.div-link {
+  text-align: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.div-link .link {
+  background: rgb(66, 81, 122);
+  color: white;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+  font-size: 20px;
+}
+.div-link .link:hover {
+  background: rgba(66, 81, 122, 0.6);
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 5% 43% 4% 43% 5%;
+  }
+  .contact-form {
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+  .frame {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    min-height: 200vh;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 40% 3% 35% 5%;
+  }
+  .contact-form {
+    margin-top: 20px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 70%;
+    padding-bottom: 50px;
+    height: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .frame {
+    display: block;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-bottom: 0;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+  }
+  #submit {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .div-link {
+    grid-row-start: 4;
+    width: 70%;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.label {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#submit {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: none;
+  background: rgb(43, 43, 43);
+  color: white;
+  padding: 10px 0px;
+  width: 90%;
+  border-radius: 6px;
+}
+.label label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.label #DiscordID {
+  height: 40px;
+}
+
+.label #DiscordID,
+textarea,
+#email {
+  background: rgb(39, 39, 39);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  width: 80%;
+  border: 1px solid gray;
+}
+#DiscordID {
+  padding: 20px 5px;
+}
+#email {
+  padding: 10px 5px;
+}
+#mailbox {
+  display: none;
+}
+.label textarea {
+  padding: 0px 5px;
+}
+
+.label ::placeholder {
+  color: whitesmoke;
+  opacity: 20%;
+}
+
+.verplicht {
+  margin-left: 20px;
+}
+
+.notice {
+  margin-left: 20px;
+  font-weight: 700;
+}
