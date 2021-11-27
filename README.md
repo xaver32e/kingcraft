@@ -9,6 +9,6 @@
 - Loading screen
 ----------------------------------------
 
-## Visit the Demo at: https://jojojelte.github.io/kingcraft/index.html
+## Visit the demo at: https://jojojelte.github.io/kingcraft/index.html
 ## Visit the official version at: https://kingcraftmc.nl/
 
