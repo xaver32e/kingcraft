@@ -21,7 +21,8 @@ body {
 /* MAIN PAGE */
 
 #hero {
-  padding: 40vh 0px 40vh 0px;
+  /* padding: 40vh 0px 40vh 0px; */
+  padding: 25vh 0px 25vh 0px;
   color: white;
 }
 
@@ -43,7 +44,10 @@ body {
 }
 
 .parallax-image {
-  background-image: url(../media/dark.png);
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  /* background-image: url(../media/dark.png); */
+  filter: drop-shadow(0px 15px 20px rgba(255, 255, 255, 0.5));
+
   height: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -89,7 +93,7 @@ body {
 #vidbtn {
   border: none;
   /* background-color: rgb(199, 91, 91); */
-  background: linear-gradient(140deg, rgb(219, 78, 78), rgb(214, 135, 61));
+  background: linear-gradient(140deg, rgb(78, 104, 219), rgb(132, 61, 214));
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 20px;
@@ -100,7 +104,6 @@ body {
   margin-top: 5px;
 }
 #vidbtn:hover {
-  font-size: 17px;
   transition: all 0.3s;
   color: white;
 }
