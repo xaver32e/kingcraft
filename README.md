@@ -2,8 +2,6 @@
 ### Including Modals, Responsible website & more
 ##### Still in development.
 ##### To do:
-- Add trailer
-- Fix pause on exit video
 - Animations
 - Add blog section [Maybe?]
 - Loading screen
