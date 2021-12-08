@@ -3,6 +3,7 @@
 ##### Still in development.
 ##### To do:
 - Animations
+- **Update Github**
 - Add blog section [Maybe?]
 - Loading screen
 ----------------------------------------
